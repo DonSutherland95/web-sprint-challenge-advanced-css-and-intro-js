@@ -242,8 +242,7 @@ console.log((artists[8].name = " Vincent Van Gogh"));
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(array, index) {
-  let outcome = array[index].name;
-  return `The artist at index ${index} is  ${outcome}`;
+  return `The artist at index ${array[index].id} is  ${array[index].name}`;
 }
 console.log(getArtistByIndex(artists, 2));
 /**
@@ -319,6 +318,22 @@ console.log(
     "I enjoy coding and playing basketball"
   )
 );
+
+function addArtistTwo(obj) {
+  let newArr = { ...artists, obj };
+  return newArr;
+}
+
+let newArtist = {
+  id: 99,
+  name: "Sam",
+  years: "1991 - 2020",
+  genre: "Dubstep",
+  nationality: "PuertoRican & Cuban",
+  bio: "Some Bio",
+};
+
+console.log("REVIEW:", addArtistTwo(newArtist));
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
