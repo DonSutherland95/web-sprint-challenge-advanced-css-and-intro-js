@@ -1,0 +1,21 @@
+/* media queries */
+@media only screen and (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .artist {
+    width: 80%;
+    text-align: center;
+  }
+  .artist img {
+    width: 60%;
+    height: 60%;
+  }
+  nav a {
+    margin: 0 7%;
+  }
+}
